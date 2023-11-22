@@ -63,6 +63,12 @@ public class Restaurant {
         return name;
     }
 
+     //Calculate the price
+     public int totalValue(List<String> itemNames) {
+        int totalPrice = 0;
+        return totalPrice;
+    }
+
 }
 
 
