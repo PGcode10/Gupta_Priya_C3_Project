@@ -63,9 +63,18 @@ public class Restaurant {
         return name;
     }
 
-     //Calculate the price
+      //Calculate the price
      public int totalValue(List<String> itemNames) {
         int totalPrice = 0;
+        if (itemNames != null) {
+            for (String name : itemNames) {
+                for (Item item : menu) {
+                    if (item.getName().equals(name))
+                        totalPrice = totalPrice + item.getPrice();
+                }
+                System.out.println(totalPrice);
+            }
+        }
         return totalPrice;
     }
 
